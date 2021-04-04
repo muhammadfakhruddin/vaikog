@@ -2,7 +2,14 @@
 [Read the instruction](https://github.com/STIW3054-A202/Assignments_and_Project/blob/main/GroupProject.md)
 
 ## Group Info:
-1. Matric Number & Name & Photo
+1. 
+
+1. 261541	Siti Anis Najiha Binti Ahmad
+2. 262584	Tuan Syaiful Aiman Bin Tuan Hussin
+3. 264248	Mohamad Aminuddin Bin Hamzah
+4. 264810	Vishnu A/L Kumaran
+5. 264912	Muhammad Fakhruddin Bin Mohd Saufi
+
 1. Mention who is the leader.
 1. Other related info (if any)
 
