@@ -3,14 +3,6 @@
 
 ## Group Info:
 1. 
-
-Matric Number	Name	
-261541	Siti Anis Najiha Binti Ahmad	
-262584	Tuan Syaiful Aiman Bin Tuan Hussin	
-264248	Mohamad Aminuddin Bin Hamzah	
-264810	Vishnu A/L Kumaran	
-264912	Muhammad Fakhruddin Bin Mohd Saufi	
-
 2. Mention who is the leader.
 3. Other related info (if any)
 
