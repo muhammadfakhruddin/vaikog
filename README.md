@@ -3,7 +3,8 @@
 
 ## Group Info:
 
-![REALTIME](https://user-images.githubusercontent.com/80609253/113514679-a0cd9400-95a2-11eb-831d-9f77526dc304.jpg)
+![REALTIME (1)](https://user-images.githubusercontent.com/80609253/113550100-18dc9e00-9625-11eb-8500-e303b2e503be.jpg)
+
 
 ## Introduction
 ## Flow Diagram of the requirements
