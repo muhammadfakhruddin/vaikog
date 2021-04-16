@@ -15,7 +15,7 @@
 
 
 ## Database Design
-![image](https://user-images.githubusercontent.com/61452411/115050895-cfd2f680-9f0e-11eb-9c11-28183f3903ae.png)
+![db design](https://user-images.githubusercontent.com/68073525/115051269-36f0ab00-9f0f-11eb-96ad-f2ef07d9ce6e.png)
 
 ## Youtube Presentation
 ## References (Not less than 20)
