@@ -15,6 +15,8 @@
 
 
 ## Database Design
+![image](https://user-images.githubusercontent.com/61452411/115050895-cfd2f680-9f0e-11eb-9c11-28183f3903ae.png)
+
 ## Youtube Presentation
 ## References (Not less than 20)
 ## JavaDoc
