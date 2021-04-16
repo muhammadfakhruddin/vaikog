@@ -11,7 +11,8 @@
 ## User manual/guideline for testing the system
 ## Result/Output (Screenshot of the output)
 ## UML Class Diagram
-![Untitled Diagram](https://user-images.githubusercontent.com/61452411/115050443-5509db80-9f0e-11eb-860d-55cb4235d87c.jpg)
+![Untitled Diagram](https://user-images.githubusercontent.com/61452411/115050622-81bdf300-9f0e-11eb-9e2c-dd1443c4ef7b.png)
+
 
 ## Database Design
 ## Youtube Presentation
