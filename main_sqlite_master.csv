@@ -1,0 +1,36 @@
+table,golf_hole,golf_hole,2,"CREATE TABLE ""golf_hole""
+(
+	hole_no int,
+	hole_index int,
+	hole_par int
+)"
+table,golf_golfer,golf_golfer,3,"CREATE TABLE golf_golfer
+(
+	golfer_id int
+		constraint golf_golfer_pk
+			primary key,
+	golfer_name int,
+	golfer_handicap int,
+	telegram_id int
+)"
+index,sqlite_autoindex_golf_golfer_1,golf_golfer,4,
+table,golf_tournament,golf_tournament,5,"CREATE TABLE golf_tournament
+(
+	tournament_id int
+		constraint golf_tournament_pk
+			primary key,
+	tounament_date int,
+	tournament_mode_of_play int
+, marker_id int, player_score int)"
+index,sqlite_autoindex_golf_tournament_1,golf_tournament,6,
+table,golf_score,golf_score,7,"CREATE TABLE golf_score
+(
+	player_score int
+)"
+table,golf_marker,golf_marker,8,"CREATE TABLE golf_marker
+(
+	marker_id int
+		constraint golf_marker_pk
+			primary key
+)"
+index,sqlite_autoindex_golf_marker_1,golf_marker,9,
