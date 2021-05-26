@@ -19,4 +19,8 @@
 
 ## Youtube Presentation
 ## References (Not less than 20)
+1. pengrad/java-telegram-bot-api. GitHub. (2021). Retrieved 26 May 2021, from https://github.com/pengrad/java-telegram-bot-api#creating-your-bot.
+2. question, T., Jesus, D., Jesus, D., & Ablan, A. (2021). Telegram Bot - Process response from user based on last bot question. Stack Overflow. Retrieved 26 May 2021, from https://stackoverflow.com/questions/59341135/telegram-bot-process-response-from-user-based-on-last-bot-question.
+3. Lesson 2. PhotoBot · Writing Telegram bots on Java. Monsterdeveloper.gitbooks.io. (2021). Retrieved 26 May 2021, from https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-2.-photobot.html.
+
 ## JavaDoc
