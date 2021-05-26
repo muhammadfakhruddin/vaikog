@@ -7,6 +7,7 @@
 
 
 ## Introduction
+This telegram bot project basically used by the golfers to updated their game play. 
 ## Flow Diagram of the requirements
 ## User manual/guideline for testing the system
 ## Result/Output (Screenshot of the output)
