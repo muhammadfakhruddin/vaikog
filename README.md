@@ -7,7 +7,7 @@
 
 
 ## Introduction
-This telegram bot project basically used by the golfers to updated their game play. 
+This telegram bot project basically used by the golfers to updated their game play. it involves 6 players and have 18 holes altogether. Each hole have different PAR value.
 ## Flow Diagram of the requirements
 ## User manual/guideline for testing the system
 ## Result/Output (Screenshot of the output)
