@@ -7,7 +7,7 @@
 
 
 ## Introduction
-This telegram bot project basically used by the golfers to updated their game play. it involves 6 players and have 18 holes altogether. Each hole have different PAR value with the total value of 72. The highest handicap is 24 and the lowest handicap is 0 but the lowest handicap is better. The system that been created are able to store hole_no, hole_index, hole_par by the system administrator. For golfer info the system also able to store golfer_id, golfer_name, golfer_handicap and telegram_id.
+This telegram bot project basically used by the golfers to updated their game play. it involves 6 players and have 18 holes altogether. Each hole have different PAR value with the total value of 72. The highest handicap is 24 and the lowest handicap is 0 but the lowest handicap is better. The system that been created are able to store hole_no, hole_index, hole_par by the system administrator. For golfer info the system also able to store golfer_id, golfer_name, golfer_handicap and telegram_id. For tournament info 
 
 
 
