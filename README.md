@@ -11,7 +11,12 @@
 ## User manual/guideline for testing the system
 ## Result/Output (Screenshot of the output)
 ## UML Class Diagram
+![Untitled Diagram](https://user-images.githubusercontent.com/61452411/115050622-81bdf300-9f0e-11eb-9e2c-dd1443c4ef7b.png)
+
+
 ## Database Design
+![db design](https://user-images.githubusercontent.com/68073525/115051269-36f0ab00-9f0f-11eb-96ad-f2ef07d9ce6e.png)
+
 ## Youtube Presentation
 ## References (Not less than 20)
 ## JavaDoc
