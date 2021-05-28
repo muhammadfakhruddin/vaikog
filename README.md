@@ -27,4 +27,7 @@
 2. question, T., Jesus, D., Jesus, D., & Ablan, A. (2021). Telegram Bot - Process response from user based on last bot question. Stack Overflow. Retrieved 26 May 2021, from https://stackoverflow.com/questions/59341135/telegram-bot-process-response-from-user-based-on-last-bot-question.
 3. Lesson 2. PhotoBot · Writing Telegram bots on Java. Monsterdeveloper.gitbooks.io. (2021). Retrieved 26 May 2021, from https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-2.-photobot.html.
 4. Codegym.cc. (2021). Retrieved 26 May 2021, from https://codegym.cc/groups/posts/telegram-bot-in-java.
+5. Send Telegram Bot Notifications with Java | rieckpil. rieckpil. (2021). Retrieved 28 May 2021, from https://rieckpil.de/howto-send-telegram-bot-notifications-with-java/.
+6. rieckpil/blog-tutorials. GitHub. (2021). Retrieved 28 May 2021, from https://github.com/rieckpil/blog-tutorials/tree/master/telegram-bot-notifications-with-java.
+7. Creating a Telegram Bot in Java: from conception to deployment. DEV Community. (2021). Retrieved 28 May 2021, from https://dev.to/codegym_cc/creating-a-telegram-bot-in-java-from-conception-to-deployment-3a8c.
 ## JavaDoc
