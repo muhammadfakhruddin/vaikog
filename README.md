@@ -30,4 +30,6 @@
 5. Send Telegram Bot Notifications with Java | rieckpil. rieckpil. (2021). Retrieved 28 May 2021, from https://rieckpil.de/howto-send-telegram-bot-notifications-with-java/.
 6. rieckpil/blog-tutorials. GitHub. (2021). Retrieved 28 May 2021, from https://github.com/rieckpil/blog-tutorials/tree/master/telegram-bot-notifications-with-java.
 7. Creating a Telegram Bot in Java: from conception to deployment. DEV Community. (2021). Retrieved 28 May 2021, from https://dev.to/codegym_cc/creating-a-telegram-bot-in-java-from-conception-to-deployment-3a8c.
+8. api, H., John, J., & Kuhn, J. (2021). How to receive messages in group chats using telegram bot api. Stack Overflow. Retrieved 30 May 2021, from https://stackoverflow.com/questions/38565952/how-to-receive-messages-in-group-chats-using-telegram-bot-api.
+9. 
 ## JavaDoc
