@@ -39,4 +39,8 @@
 14. object, R., Akhtar, J., kapilarathna, S., & Sekhar, C. (2021). Reading Data From Database and storing in Array List object. Stack Overflow. Retrieved 31 May 2021, from https://stackoverflow.com/questions/11983554/reading-data-from-database-and-storing-in-array-list-object/25777846 .
 15. (2021). Retrieved 31 May 2021, from https://mvnrepository.com/artifact/org.telegram/telegrambots.
 16. (2021). Retrieved 31 May 2021, from https://app.diagrams.net/ .
+17. https://www.tutorialspoint.com/Java-String-substring-Method-example#:~:text=The%20substring(int%20beginIndex%2C%20int,the%20substring%20is%20endIndex%2DbeginIndex.
+18. Java String length() method example.. Tutorialspoint.com. (2021). Retrieved 31 May 2021, from https://www.tutorialspoint.com/Java-String-length-method-example.
+19. Java String contains() Method. W3schools.com. (2021). Retrieved 31 May 2021, from https://www.w3schools.com/java/ref_string_contains.asp.
+20. 
 ## JavaDoc
