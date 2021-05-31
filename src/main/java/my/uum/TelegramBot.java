@@ -39,6 +39,28 @@ public class TelegramBot extends TelegramLongPollingBot {
                     sendMessage("GolderID:\nGolferName:\nGolferHandicap:\nTelegramID:",update);
                 }else if (update.getMessage().getText().equals("/Tournament")){
                     sendMessage("TournamentID:\nTournamentDate:\nModeOfPlay:",update);
+                }else if (update.getMessage().getText().equals("/Player")){
+                    sendMessage("Score Submission\n" +
+                            "GolferID:\n" +
+                            "MarkerID:\n" +
+                            "Hole 1: \n" +
+                            "Hole 2: \n" +
+                            "Hole 3: \n" +
+                            "Hole 4: \n" +
+                            "Hole 5: \n" +
+                            "Hole 6: \n" +
+                            "Hole 7: \n" +
+                            "Hole 8: \n" +
+                            "Hole 9: \n" +
+                            "Hole 10:\n" +
+                            "Hole 11:\n" +
+                            "Hole 12:\n" +
+                            "Hole 13:\n" +
+                            "Hole 14:\n" +
+                            "Hole 15:\n" +
+                            "Hole 16:\n" +
+                            "Hole 17:\n" +
+                            "Hole 18:",update);
                 }
             }
         }).start();
