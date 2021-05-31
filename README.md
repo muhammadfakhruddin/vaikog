@@ -33,5 +33,10 @@
 8. api, H., John, J., & Kuhn, J. (2021). How to receive messages in group chats using telegram bot api. Stack Overflow. Retrieved 30 May 2021, from https://stackoverflow.com/questions/38565952/how-to-receive-messages-in-group-chats-using-telegram-bot-api.
 9. How can i turn this chatter bot into an array that scans user input. Retrived 31 May 2021 from https://stackoverflow.com/questions/49501955/how-can-i-turn-this-chatter-bot-into-an-array-that-scans-user-input
 10. Java String substring() method - javatpoint. www.javatpoint.com. (2021). Retrieved 31 May 2021, from https://www.javatpoint.com/java-string-substring#:~:text=The%20java%20string%20substring(),end%20index%20starts%20from%201.
-11. 
+11. Split() String method in Java with examples - GeeksforGeeks. GeeksforGeeks. (2021). Retrieved 31 May 2021, from https://www.geeksforgeeks.org/split-string-java-examples/.
+12. Split() String Method in Java: How to Split String with Example. Guru99.com. (2021). Retrieved 31 May 2021, from https://www.guru99.com/how-to-split-a-string-in-java.html.
+13. ArrayList (Java Platform SE 8 ). Docs.oracle.com. (2021). Retrieved 31 May 2021, from https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html.
+14. object, R., Akhtar, J., kapilarathna, S., & Sekhar, C. (2021). Reading Data From Database and storing in Array List object. Stack Overflow. Retrieved 31 May 2021, from https://stackoverflow.com/questions/11983554/reading-data-from-database-and-storing-in-array-list-object/25777846 .
+15. (2021). Retrieved 31 May 2021, from https://mvnrepository.com/artifact/org.telegram/telegrambots.
+16. (2021). Retrieved 31 May 2021, from https://app.diagrams.net/ .
 ## JavaDoc
