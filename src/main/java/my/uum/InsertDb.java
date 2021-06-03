@@ -2,7 +2,7 @@ package my.uum;
 
 import java.sql.*;
 
-public class Database {
+public class InsertDb {
 
     public Connection connect(){
         String url="jdbc:sqlite:D:\\UUM\\A202\\InteliJ\\group-project-vaikog\\golfdb.sqlite";
@@ -15,7 +15,7 @@ public class Database {
         return conn;
     }
 
-    public void hole(String hole_number, String hole_index, String hole_par) {
+    public void insertHole(String hole_number, String hole_index, String hole_par) {
 
         String sql = "INSERT INTO golf_hole(hole_no,hole_index,hole_par) VALUES(?,?,?)";
 
@@ -31,7 +31,7 @@ public class Database {
         }
     }
 
-    public void golfer(String golfer_id, String golfer_name, String golfer_handicap, String telegram_id) {
+    public void insertGolfer(String golfer_id, String golfer_name, String golfer_handicap, String telegram_id) {
         String sql = "INSERT INTO golf_golfer(golfer_id,golfer_name,golfer_handicap,telegram_id) VALUES(?,?,?,?)";
 
         Connection conn = this.connect();
@@ -47,7 +47,7 @@ public class Database {
         }
     }
 
-    public void tournament(String tournament_id, String tournament_date, String mode_of_play) {
+    public void insertTournament(String tournament_id, String tournament_date, String mode_of_play) {
         String sql = "INSERT INTO golf_tournament(tournament_id,tounament_date,tournament_mode_of_play) VALUES(?,?,?)";
 
         Connection conn = this.connect();
@@ -77,4 +77,6 @@ public class Database {
             System.out.println(e.getMessage());
         }
     }
+
+
 }
