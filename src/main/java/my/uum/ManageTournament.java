@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class DeleteDb {
+public class ManageTournament {
     public Connection connect(){
         String url="jdbc:sqlite:D:\\UUM\\A202\\InteliJ\\group-project-vaikog\\golfdb.sqlite";
         Connection conn = null;
@@ -16,30 +16,34 @@ public class DeleteDb {
         }
         return conn;
     }
-    public void deleteHole(String delete_hole) {
-        String sql = "DELETE FROM golf_hole WHERE hole_no = ?";
+    public void insertTournament(String tournament_id, String tournament_date, String mode_of_play) {
+        String sql = "INSERT INTO golf_tournament(tournament_id,tounament_date,tournament_mode_of_play) VALUES(?,?,?)";
+
         Connection conn = this.connect();
         try(PreparedStatement stmt = conn.prepareStatement(sql)){
-            stmt.setInt(1, Integer.parseInt((delete_hole)));
+            stmt.setInt(1, Integer.parseInt((tournament_id)));
+            stmt.setString(2, ((tournament_date)));
+            stmt.setString(3, (mode_of_play));
 
             stmt.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
     }
+    public void updateTournament(String tournament_date, String mode_of_play, String tournament_id) {
 
-    public void deleteGolfer(String delete_golfer) {
-        String sql = "DELETE FROM golf_golfer WHERE golfer_id = ?";
+        String sql = "UPDATE golf_tournament SET tournament_date = ? , tournament_mode_of_play = ?  WHERE tournament_id = ?";
+
         Connection conn = this.connect();
         try(PreparedStatement stmt = conn.prepareStatement(sql)){
-            stmt.setInt(1, Integer.parseInt((delete_golfer)));
-
+            stmt.setString(1, (tournament_date));
+            stmt.setString(2, (mode_of_play));
+            stmt.setInt(3, Integer.parseInt((tournament_id)));
             stmt.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
     }
-
     public void deleteTournament(String delete_tournament) {
         String sql = "DELETE FROM golf_tournament WHERE tournament_id = ?";
         Connection conn = this.connect();

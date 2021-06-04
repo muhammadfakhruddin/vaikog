@@ -1,55 +1,58 @@
 package my.uum;
 
 public class SubString {
-InsertDb insertDb = new InsertDb();
-DeleteDb deleteDb = new DeleteDb();
-UpdateDb updateDb = new UpdateDb();
+    ManageScore manageScore = new ManageScore();
+    ManageHole manageHole = new ManageHole();
+    ManageGolfer manageGolfer = new ManageGolfer();
+    ManageTournament manageTournament = new ManageTournament();
+
     public void test(String command) {
-        insertDb.connect();
-        deleteDb.connect();
-        updateDb.connect();
+        manageScore.connect();
+        manageHole.connect();
+        manageGolfer.connect();
+        manageTournament.connect();
         if (command.contains("HoleNumber")){
             String[] arr = command.split("\n", 0);
             String hole_number = arr[0].substring(11,arr[0].length());
             String hole_index = arr[1].substring(10,arr[1].length());
             String hole_par = arr[2].substring(8,arr[2].length());
-            insertDb.insertHole(hole_number,hole_index,hole_par);
+            manageHole.insertHole(hole_number,hole_index,hole_par);
         }else if (command.contains("GolderID")){
             String[] arr = command.split("\n", 0);
             String golfer_id = arr[0].substring(9,arr[0].length());
             String golfer_name = arr[1].substring(11,arr[1].length());
             String golfer_handicap = arr[2].substring(15,arr[2].length());
             String telegram_id = arr[3].substring(11,arr[3].length());
-            insertDb.insertGolfer(golfer_id,golfer_name,golfer_handicap,telegram_id);
+            manageGolfer.insertGolfer(golfer_id,golfer_name,golfer_handicap,telegram_id);
         }else if (command.contains("TournamentID")){
             String[] arr = command.split("\n", 0);
             String tournament_id = arr[0].substring(13,arr[0].length());
             String tournament_date = arr[1].substring(15,arr[1].length());
             String mode_of_play = arr[2].substring(11,arr[2].length());
-            insertDb.insertTournament(tournament_id,tournament_date,mode_of_play);
+            manageTournament.insertTournament(tournament_id,tournament_date,mode_of_play);
         }else if (command.contains("Score Submission")){
             String [] arr = command.split("\n",0);
             String [] ars = new String[18];
             String golfer_id=arr[1].substring(9, arr[1].length());
             String marker_id=arr[2].substring(9, arr[2].length());
             for (int i=0;i< ars.length;i++){ ars[i]= arr[i+3].substring(8, arr[i+3].length()); }
-            for (int i=0;i< ars.length;i++){ insertDb.score(golfer_id,marker_id,(i+1),ars[i]); }
+            for (int i=0;i< ars.length;i++){ manageScore.score(golfer_id,marker_id,(i+1),ars[i]); }
         }else if (command.contains("Hole Number:")){
             String delete_hole = command.substring(12,command.length());
-            deleteDb.deleteHole(delete_hole);
+            manageHole.deleteHole(delete_hole);
         }else if (command.contains("Golfer ID:")){
             String delete_golfer = command.substring(10,command.length());
-            deleteDb.deleteGolfer(delete_golfer);
+            manageGolfer.deleteGolfer(delete_golfer);
         }else if (command.contains("Tournament ID:")){
             String delete_tournament = command.substring(14,command.length());
-            deleteDb.deleteTournament(delete_tournament);
+            manageTournament.deleteTournament(delete_tournament);
         }else if (command.contains("Update Hole")){
             String[] arr = command.split("\n", 0);
 
             String hole_number = arr[1].substring(12,arr[1].length());
             String hole_index = arr[2].substring(11,arr[2].length());
             String hole_par = arr[3].substring(9,arr[3].length());
-            updateDb.updateHole(hole_index,hole_par,hole_number);
+            manageHole.updateHole(hole_index,hole_par,hole_number);
         }else if (command.contains("Update Golfer")){
             String[] arr = command.split("\n", 0);
 
@@ -58,7 +61,7 @@ UpdateDb updateDb = new UpdateDb();
             String golfer_handicap = arr[3].substring(16,arr[3].length());
             String telegram_id = arr[4].substring(12,arr[4].length());
 
-            updateDb.updateGolfer(golfer_name,golfer_handicap,telegram_id,golfer_id);
+            manageGolfer.updateGolfer(golfer_name,golfer_handicap,telegram_id,golfer_id);
         }else if (command.contains("Update Tournament")){
             String[] arr = command.split("\n", 0);
 
@@ -66,7 +69,7 @@ UpdateDb updateDb = new UpdateDb();
             String tournament_date = arr[2].substring(16,arr[2].length());
             String mode_of_play = arr[3].substring(13,arr[3].length());
 
-            updateDb.updateTournament(tournament_date,mode_of_play,tournament_id);
+            manageTournament.updateTournament(tournament_date,mode_of_play,tournament_id);
         }
     }
 

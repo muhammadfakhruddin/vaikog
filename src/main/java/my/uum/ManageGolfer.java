@@ -1,9 +1,11 @@
 package my.uum;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
-public class InsertDb {
-
+public class ManageGolfer {
     public Connection connect(){
         String url="jdbc:sqlite:D:\\UUM\\A202\\InteliJ\\group-project-vaikog\\golfdb.sqlite";
         Connection conn = null;
@@ -14,23 +16,6 @@ public class InsertDb {
         }
         return conn;
     }
-
-    public void insertHole(String hole_number, String hole_index, String hole_par) {
-
-        String sql = "INSERT INTO golf_hole(hole_no,hole_index,hole_par) VALUES(?,?,?)";
-
-        Connection conn = this.connect();
-        try(PreparedStatement stmt = conn.prepareStatement(sql)){
-            stmt.setInt(1, Integer.parseInt((hole_number)));
-            stmt.setInt(2, Integer.parseInt((hole_index)));
-            stmt.setInt(3, Integer.parseInt((hole_par)));
-
-            stmt.executeUpdate();
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
     public void insertGolfer(String golfer_id, String golfer_name, String golfer_handicap, String telegram_id) {
         String sql = "INSERT INTO golf_golfer(golfer_id,golfer_name,golfer_handicap,telegram_id) VALUES(?,?,?,?)";
 
@@ -46,37 +31,29 @@ public class InsertDb {
             System.out.println(e.getMessage());
         }
     }
-
-    public void insertTournament(String tournament_id, String tournament_date, String mode_of_play) {
-        String sql = "INSERT INTO golf_tournament(tournament_id,tounament_date,tournament_mode_of_play) VALUES(?,?,?)";
+    public void updateGolfer(String golfer_name, String golfer_handicap, String telegram_id, String golfer_id) {
+        String sql = "UPDATE golf_golfer SET golfer_name = ? , golfer_handicap = ? , telegram_id = ? WHERE golfer_id = ?";
 
         Connection conn = this.connect();
         try(PreparedStatement stmt = conn.prepareStatement(sql)){
-            stmt.setInt(1, Integer.parseInt((tournament_id)));
-            stmt.setString(2, ((tournament_date)));
-            stmt.setString(3, (mode_of_play));
+            stmt.setString(1, (golfer_name));
+            stmt.setInt(2, Integer.parseInt((golfer_handicap)));
+            stmt.setInt(3, Integer.parseInt((telegram_id)));
+            stmt.setInt(4, Integer.parseInt((golfer_id)));
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+    public void deleteGolfer(String delete_golfer) {
+        String sql = "DELETE FROM golf_golfer WHERE golfer_id = ?";
+        Connection conn = this.connect();
+        try(PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1, Integer.parseInt((delete_golfer)));
 
             stmt.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
     }
-
-    public void score(String golfer_id, String marker_id, int hole_number, String score) {
-        String sql = "INSERT INTO golf_score(golfer_id,marker_id,hole_number,score) VALUES(?,?,?,?)";
-
-        Connection conn = this.connect();
-        try(PreparedStatement stmt = conn.prepareStatement(sql)){
-            stmt.setInt(1, Integer.parseInt((golfer_id)));
-            stmt.setInt(2, Integer.parseInt(((marker_id))));
-            stmt.setInt(3, (hole_number));
-            stmt.setInt(4, Integer.parseInt((score)));
-
-            stmt.executeUpdate();
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-
 }
