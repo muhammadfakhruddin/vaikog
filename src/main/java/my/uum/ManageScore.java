@@ -1,6 +1,7 @@
 package my.uum;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 public class ManageScore {
 
@@ -29,6 +30,27 @@ public class ManageScore {
             System.out.println(e.getMessage());
         }
     }
+    public ArrayList<Golfer> player()throws ClassNotFoundException,SQLException{
+        String sql = "SELECT golfer_id FROM golf_golfer";
+        try (Connection conn = this.connect(); Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery(sql)){
+            ArrayList<Golfer> golfers = new ArrayList<>();
+            while (rs.next()){
+                Golfer list = new Golfer(rs.getInt("golfer_id"));
+                golfers.add(list);
+            }
+            return golfers;
+        }
+    }
+    public ArrayList<Golfer> totalScore(int golfer_id)throws ClassNotFoundException,SQLException{
+        String sql = "SELECT golfer_id FROM golf_golfer";
 
-
+        try (Connection conn = this.connect(); Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery(sql)){
+            ArrayList<Golfer> golfers = new ArrayList<>();
+            while (rs.next()){
+                Golfer list = new Golfer(rs.getInt("golfer_id"));
+                golfers.add(list);
+            }
+            return golfers;
+        }
+    }
 }
