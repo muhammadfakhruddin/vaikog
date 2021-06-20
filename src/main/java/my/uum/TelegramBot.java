@@ -8,6 +8,7 @@ import org.telegram.telegrambots.meta.api.objects.User;
 import org.telegram.telegrambots.meta.bots.AbsSender;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class TelegramBot extends TelegramLongPollingBot {
@@ -82,8 +83,11 @@ public class TelegramBot extends TelegramLongPollingBot {
                 }else if (update.getMessage().getText().equals("/MarkerApproval")){
                     sendMessage("Your score submission has been approved by the marker\uD83E\uDD76",update);
                     sendMessage("Your submission has been successfully saved \uD83D\uDE12",update);
-                }else if (update.getMessage().getText().equals("/ViewWinner")){
-                    sendMessage("No one win this bullshit game\uD83E\uDD74",update);
+                }else if (update.getMessage().getText().equals("/ViewWinner")) {
+                    ManageScore manageScore = new ManageScore();
+                    ArrayList<TotalScore> totalScores = null;
+                        sendMessage("No one win this bullshit game\uD83E\uDD74" + totalScores.get(0).getGolfer_id(), update);
+
                 }
 
             }

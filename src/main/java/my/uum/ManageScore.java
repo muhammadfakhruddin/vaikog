@@ -33,11 +33,11 @@ public class ManageScore {
     }
 
     public ArrayList<Golfer> player() throws ClassNotFoundException, SQLException {
-        String sql = "SELECT golfer_id FROM golf_golfer";
+        String sql = "SELECT DISTINCT golfer_id,golfer_handicap FROM golf_golfer";
         try (Connection conn = this.connect(); Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery(sql)) {
             ArrayList<Golfer> golfers = new ArrayList<>();
             while (rs.next()) {
-                Golfer list = new Golfer(rs.getInt("golfer_id"));
+                Golfer list = new Golfer(rs.getInt("golfer_id"), rs.getInt("golfer_handicap"));
                 golfers.add(list);
             }
             return golfers;
@@ -54,6 +54,32 @@ public class ManageScore {
                 scores.add(list);
             }
             return scores;
+        }
+    }
+    public void insertScore(int golfer_id, int netscore) {
+        String sql = "INSERT INTO total_score(golfer_id,totalscore) VALUES(?,?)";
+
+        Connection conn = this.connect();
+        try(PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1, (golfer_id));
+            stmt.setInt(2, (netscore));
+
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+    public ArrayList<TotalScore> getScore() throws ClassNotFoundException,SQLException{
+        String sql = "SELECT max(totalscore) FROM total_score";
+
+        try (Connection conn = this.connect(); Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery(sql)){
+            ArrayList<TotalScore> student = new ArrayList<>();
+
+            while (rs.next()){
+                TotalScore list = new TotalScore(rs.getInt("golfer_id"),rs.getInt("totascore"));
+                student.add(list);
+            }
+            return student;
         }
     }
 }
