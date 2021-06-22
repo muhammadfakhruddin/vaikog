@@ -22,8 +22,8 @@
           <assembleDirectory>target</assembleDirectory>
           <programs>
             <program>
-              <mainClass>com.home.server.TelegramBot</mainClass>
-              <name>workerBot</name>
+              <mainClass>App</mainClass>
+              <name>STIW3054_A202_VaikoG_bot</name>
             </program>
           </programs>
         </configuration>
